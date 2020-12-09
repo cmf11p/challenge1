@@ -1,0 +1,127 @@
+html {
+    background-image: linear-gradient(white,rgb(153, 153, 153));
+}
+
+body {
+    display: grid;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.titulo1 {
+    color: red;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    transform: scale(1.5);
+    transition: color 5s, transform 5s;
+}
+
+.titulo2 {
+    color: darkblue;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    transform: scale(1.2);
+    transition: color 5s, transform 5s;
+}
+
+.parrafo {
+    color: darkgreen;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+ul li {
+    color: blue;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    list-style-type: square;
+    margin: 10px 15px;
+}
+
+.IndHead {
+    display: inline;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #4180dd;
+    transition: background-color 0.5s;
+}
+
+.IndHead a {
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.IndHead:hover {
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background-color: #1b025f; 
+}
+
+
+#gridx {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    grid-template-areas: 
+        "header header header"
+        "topper topper topper"
+        "img1 p1 p1"
+        "p2 p3 img2"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 300px 200px 200px 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: stretch;
+}
+img {
+    transition: all 1s;
+}
+img:hover {
+    transform: scale(2) rotate(30deg);
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#Top {
+    grid-area: topper;
+    justify-items: stretch;
+}
+
+img#img1 {
+    grid-area: img1;
+    justify-self: center;
+}
+
+p#p1 {
+    grid-area: p1;
+}
+p#p2 {
+    grid-area: p2;
+}
+p#p3 {
+    grid-area: p3;
+}
+img#img2 {
+    grid-area: img2;
+    justify-self: center;
+}
+footer {
+    grid-area: footer;
+}
+
+.borde {
+    border: 2px solid black;
+}
