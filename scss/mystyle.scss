@@ -1,0 +1,60 @@
+/* Variables */
+$ele_width:240px;
+
+/* Header */
+header.masthead{
+    padding-top:calc(5rem + 72px);
+    padding-bottom:5rem;
+}
+
+
+/* Vectores en Footer */
+.footer {
+    .footer__image {
+        width: 24px;
+    }
+}
+.bg-black{
+    background-color:#000
+}
+
+/* Boton Extra Large */
+.btn-xl{
+    text-transform:uppercase;
+    padding:1rem 2rem;
+    font-weight:700;
+    letter-spacing:.1rem
+}
+
+/* Barra de Navegacion */
+.navbar-custom{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    background-color:rgba(0,0,0)
+}
+.navbar-brand{
+    text-transform:uppercase;
+    letter-spacing:.1rem;
+    font-weight:700;
+}
+.nav-link{
+    text-transform:uppercase;
+    font-size:.9rem;
+    font-weight:700;
+    letter-spacing:.1rem
+}
+
+
+/* Para pantallas de Desktop */
+@media (min-width:992px){
+    header.masthead{
+        padding-top:calc(5rem + 55px);
+        padding-bottom:8rem
+    }
+    header.masthead .masthead-content .masthead-heading{
+        font-size:6rem
+    }
+    header.masthead .masthead-content .masthead-subheading{
+        font-size:4rem
+    }
+}
