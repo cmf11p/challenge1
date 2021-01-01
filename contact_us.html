@@ -60,36 +60,49 @@
   </section>
 
   <section class="p-5">
-    <form class="col-lg-6">
-      <legend>Contact Information</legend>
+    <div class="container">
       <div class="row">
-        <div class="form-group col">
-        <label for="Name">Name:</label>
-        <input type="text" id="Name" name="Name" class="form-control"></div>
-        <div class="form-group col">
-        <label for="Surname">Surname:</label>
-        <input type="text" id="Surname" name="Surname" class="form-control"></div>
+        <form class="col-sm-10 offset-sm-1 justify-content-center">
+          <legend>Contact Information</legend>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="Name">Name:</label>
+              <input type="text" id="Name" name="Name" class="form-control">
+            </div>
+            <div class="form-group col">
+              <label for="Surname">Surname:</label>
+              <input type="text" id="Surname" name="Surname" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="E-mail">E-mail:</label>
+            <input type="text" id="E-mail" name="E-mail" class="form-control">
+          </div>
+          <div class="form-group"> Device: 
+            <select name="Product" class="form-control">
+              <option value="Phone">Phone</option>
+              <option value="Tablet">Tablet</option>
+            </select> 
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">Type of Inquiry: </label> 
+            <input type="radio" id="Consult" name="Type" value="consult" class="form-check-input" checked>
+            <label for="Consult" class="form-check-label">Consult</label> 
+          </div> 
+          <div class="form-check form-check-inline">
+            <input type="radio" id="Support" name="Type" value="support" class="form-check-input">
+            <label for="Support" class="form-check-label">Support</label>
+          </div>
+          <div class="form-group">
+            <label for="BloqueTexto">Other information:</label>
+            <textarea name="Topic" cols="30" rows="10" id="BloqueTexto" class="form-control" placeholder="Main Topic"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-primary">
+          <input type="reset" value="Clear" class="btn btn-light">
+          
+        </form>
       </div>
-      <div class="form-group">
-      <label for="E-mail">E-mail:</label>
-      <input type="text" id="E-mail" name="E-mail" class="form-control"></div>
-      <div class="form-group"> I have a: <select name="Product">
-        <option value="Phone">Phone</option>
-        <option value="Tablet">Tablet</option>
-        <option value="Both">Both</option>
-      </select> </div>
-      <div class="form-check form-check-inline">
-      <input type="radio" id="Consult" name="Type" value="consult" class="form-check-input" checked><label for="Consult" class="form-check-label">Consult</label> 
-      </div> <div class="form-check form-check-inline">
-      <input type="radio" id="Support" name="Type" value="support" class="form-check-input"><label for="Support" class="form-check-label">Support</label>
-      </div>
-      <div class="form-group">
-      Other information:
-      <textarea name="Topic" cols="30" rows="10">Main topic of contact.</textarea><br>
-      <input type="submit" value="Submit">
-      <input type="reset" value="Clear">
-      </div>
-  </form>
+    </div>
   </section>
 
   <!--Footer Sociales-->
