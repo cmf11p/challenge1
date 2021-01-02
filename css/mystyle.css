@@ -2,6 +2,10 @@ p {
   font-size: 1.35rem;
 }
 
+.modal {
+  white-space: pre-line;
+}
+
 /* Header */
 header.masthead {
   padding-top: calc(5rem + 72px);
