@@ -1,14 +1,22 @@
-/* Variables */
-$ele_width:240px;
+p{
+    font-size: 1.35rem;
+}
 
 /* Header */
 header.masthead{
     padding-top:calc(5rem + 72px);
     padding-bottom:5rem;
+
+    .masthead-content .masthead-heading{
+        font-size:6rem
+    }
+
+    .masthead-content .masthead-subheading{
+        font-size:4rem
+    }
 }
 
-
-/* Vectores en Footer */
+/* Footer */
 .footer {
     .footer__image {
         width: 24px;
@@ -46,9 +54,9 @@ header.masthead{
 
 
 /* Para pantallas de Desktop */
-@media (min-width:992px){
+@media (min-width:990px){
     header.masthead{
-        padding-top:calc(5rem + 55px);
+        padding-top:calc(8rem + 55px);
         padding-bottom:8rem
     }
     header.masthead .masthead-content .masthead-heading{
@@ -57,4 +65,8 @@ header.masthead{
     header.masthead .masthead-content .masthead-subheading{
         font-size:4rem
     }
+    p{
+        font-size: 1.25rem;
+    }
+    
 }
