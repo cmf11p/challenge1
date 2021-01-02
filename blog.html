@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="css/mystyle.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Thera - Blog</title>
     <meta name="description" content="Be a part of the new phone revolution, and join in a new era.">
     <meta name="keywords" content="celular, smartphone, alta gama, high end, 2020, tablet, budget, low end, blog">
@@ -44,51 +45,74 @@
   <header class="header text-center masthead">
     <div class="masthead-content">
       <div class="container">
-        <h1 class="masthead-heading header__titulo">Join the next generation</h1>
-        <h2 class="masthead-subheading header__subtitulo">in phone technology</h2>
+        <h1 class="masthead-heading header__titulo">Check the latest news</h1>
+        <h2 class="masthead-subheading header__subtitulo">on our progress.</h2>
       </div>
     </div>
   </header>
 
-  <!--Primer bloque-->
+  <!--Bloque de cartas-->
   <section class="section">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid" src="img/01.jpg">
+      <div class="row justify-content-center">
+        <div class="card col-lg-5 m-3" data-aos="fade-right">
+          <img class="card-img-top" src="img/01.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Our greatest device</h5>
+            <p class="card-text">It all lead up to this moment, the ultimate smartphone is finally realized.</p>
+            <a href="#" class="btn btn-primary">Read more</a>
           </div>
         </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-            <h2 class="display-4">The next gen Tech is here</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+        <div class="card col-lg-5 m-3" data-aos="fade-left">
+          <img class="card-img-top" src="img/cpu.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Let's talk about SoCs</h5>
+            <p class="card-text">What drives the portable devices of today, and what might drive the PCs of tomorrow</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+    <!--Segunda Fila-->
+      <div class="row justify-content-center">
+        <div class="card col-lg-5 m-3" data-aos="fade-right">
+          <img class="card-img-top" src="img/03.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Gamers rejoice</h5>
+            <p class="card-text">Our latest product focuses on the best performance possible while gaming, but this comes at a cost...</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+        <div class="card col-lg-5 m-3" data-aos="fade-left">
+          <img class="card-img-top" src="img/cpu.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Problems of the present, hopes for the future</h5>
+            <p class="card-text">The latest global issue brought us all to a new present, with less human contact, and more internet interactions...</p>
+            <a href="#" class="btn btn-danger">Read more</a>
+          </div>
+        </div>
+      </div>
+  <!--Tercera Fila-->
+      <div class="row justify-content-center">
+        <div class="card col-lg-5 m-3" data-aos="fade-right">
+          <img class="card-img-top" src="img/cpu.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">The true start of Thera</h5>
+            <p class="card-text">Lets talk about our objectives for the future, and why we decided on this image for the generic card header...</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+        <div class="card col-lg-5 m-3" data-aos="fade-left">
+          <img class="card-img-top" src="img/04.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Absolute efficiency</h5>
+            <p class="card-text">Our first device squeezes the maximum performance and features amount as possible within a limited budget, this is...</p>
+            <a href="#" class="btn btn-primary">Read more</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!--Segundo Bloque-->
-  <section class="section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="p-5">
-            <img class="img-fluid" src="img/02.jpg">
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-5">
-            <h2 class="display-4">We welcome you to a new future</h2>
-            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Show more</button>
-            <div id="demo1" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <!--Footer Sociales-->
   <footer class="py-4 bg-black footer">
     <div class="container">
@@ -105,6 +129,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

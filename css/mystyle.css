@@ -6,6 +6,16 @@ p {
   white-space: pre-line;
 }
 
+h1:hover {
+  transition: color 1s;
+  color: blue;
+}
+
+h2:hover {
+  transition: color 1s;
+  color: red;
+}
+
 /* Header */
 header.masthead {
   padding-top: calc(5rem + 72px);
