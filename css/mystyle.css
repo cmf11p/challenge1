@@ -1,11 +1,14 @@
+/* Texto en parrafos */
 p {
   font-size: 1.35rem;
 }
 
+/* Modal */
 .modal {
   white-space: pre-line;
 }
 
+/* Animaciones */
 h1:hover {
   transition: color 1s;
   color: blue;
@@ -40,7 +43,7 @@ header.masthead .masthead-content .masthead-subheading {
 /* Boton Extra Large */
 .btn-xl {
   text-transform: uppercase;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
@@ -66,7 +69,7 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 /* Para pantallas de Desktop */
-@media (min-width: 990px) {
+@media (min-width: 900px) {
   header.masthead {
     padding-top: calc(8rem + 55px);
     padding-bottom: 8rem;
